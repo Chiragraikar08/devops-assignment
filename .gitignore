@@ -1,0 +1,10 @@
+# Ignore all reference/guide material — only exercise solutions should be tracked
+Assignments/
+Notes/
+References/
+Images/
+Syllabus/
+README.md
+
+# Ignore the exercise instruction markdown files (user guide)
+Exercises/*.md
