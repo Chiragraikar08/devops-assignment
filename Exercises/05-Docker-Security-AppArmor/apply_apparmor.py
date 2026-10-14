@@ -1,26 +1,30 @@
+
 import docker
 
-# Create a Docker client
 client = docker.from_env()
 
-# Build the Docker image
+print("Building Docker image...")
 client.images.build(path=".", tag="flask-apparmor")
 
-# Run the container with the AppArmor profile
-container = client.containers.run(
-    "flask-apparmor",
-    ports={'5000/tcp': 5000},
-    security_opt=["apparmor=my-apparmor-profile"],
-    detach=True
-)
+container = None
 
-print(f"Container started: {container.short_id}")
+try:
+    print("Starting container with AppArmor...")
+    container = client.containers.run(
+        "flask-apparmor",
+        ports={"5000/tcp": 5001},
+        security_opt=["apparmor=my-apparmor-profile"],
+        detach=True
+    )
 
-# Verify AppArmor profile applied
-container_info = client.api.inspect_container(container.id)
-apparmor_profile = container_info['HostConfig']['SecurityOpt']
+    info = client.api.inspect_container(container.id)
 
-print(f"AppArmor profile applied: {apparmor_profile}")
+    print("Container started:", container.short_id)
+    print("AppArmor security options:",
+          info["HostConfig"]["SecurityOpt"])
 
-# Stop the container
-container.stop()
+finally:
+    if container is not None:
+        container.stop()
+        container.remove()
+        print("Container stopped and removed.")

@@ -1,17 +1,11 @@
-# Use an official Python runtime as a parent image
-FROM python:3.8-slim
+FROM python:3.12-slim
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+COPY app.py /app/app.py
 
-# Install Flask
-RUN pip install flask
+RUN pip install --no-cache-dir flask
 
-# Expose port 5000
 EXPOSE 5000
 
-# Run app.py when the container launches
 CMD ["python", "app.py"]
