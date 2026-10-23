@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirag C Raykar | Resume</title>
+  <meta name="description" content="Resume and portfolio of Chirag C Raykar, backend-focused engineering student.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 35px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    h1 {
+      color: #58a6ff;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #8b949e;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      color: #58a6ff;
+      font-size: 20px;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    h3 {
+      color: #f0f6fc;
+      font-size: 16px;
+    }
+
+    .entry {
+      margin-bottom: 22px;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      font-size: 13px;
+      margin: 4px 0 8px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .skills p {
+      margin: 7px 0;
+    }
+
+    strong {
+      color: #f0f6fc;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+      padding: 4px 9px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin: 3px 2px;
+    }
+
+    .project-links {
+      margin: 6px 0;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      color: #8b949e;
+      font-size: 12px;
+      border-top: 1px solid #30363d;
+      margin-top: 30px;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 12px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      header p {
+        overflow-wrap: anywhere;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: #222;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+        border: none;
+        background: white;
+      }
+
+      h1, h2, h3, strong, a {
+        color: #222;
+      }
+
+      .tag {
+        color: #222;
+        background: white;
+      }
+
+      section {
+        margin-top: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <h1>CHIRAG C RAYKAR</h1>
+      <p>Bengaluru, India | +91 6360613482</p>
+      <p>
+        <a href="mailto:chiragraikar08@gmail.com">
+          chiragraikar08@gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/Chiragraikar08" target="_blank">
+          GitHub
+        </a>
+        |
+        <a href="https://linkedin.com/in/chiragraykar" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Backend-focused B.E. Information Science student who builds and
+        deploys REST APIs, SQL-backed services and full-stack applications
+        using Node.js, Express, Python and PostgreSQL. Strong in Data
+        Structures &amp; Algorithms, OOP, DBMS and Operating Systems, with
+        experience taking projects from schema design to production deployment.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="entry">
+        <h3>BMS College of Engineering</h3>
+        <p class="subtitle">
+          Bengaluru, India | 2023–2027
+        </p>
+        <p>
+          B.E. in Information Science and Engineering (VTU)
+          | CGPA: 7.3
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Sir M V PU College</h3>
+        <p class="subtitle">
+          Davangere, India | 2021–2023
+        </p>
+        <p>Pre-University Course (12th) | 90%</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+
+      <p><strong>Languages</strong></p>
+      <span class="tag">Python</span>
+      <span class="tag">C++</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">SQL</span>
+
+      <p><strong>Frameworks</strong></p>
+      <span class="tag">Node.js</span>
+      <span class="tag">Express.js</span>
+      <span class="tag">React</span>
+      <span class="tag">Next.js</span>
+
+      <p><strong>Databases</strong></p>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">MongoDB</span>
+      <span class="tag">Supabase</span>
+      <span class="tag">MySQL</span>
+
+      <p><strong>Backend &amp; Design</strong></p>
+      <span class="tag">REST API Design</span>
+      <span class="tag">Session-Based Authentication</span>
+      <span class="tag">ER Diagrams</span>
+      <span class="tag">Database Schema Design</span>
+
+      <p><strong>Cloud &amp; Deployment</strong></p>
+      <span class="tag">Cloud Computing</span>
+      <span class="tag">Vercel</span>
+      <span class="tag">Render</span>
+
+      <p><strong>Core CS</strong></p>
+      <span class="tag">DSA</span>
+      <span class="tag">OOP</span>
+      <span class="tag">DBMS</span>
+      <span class="tag">Operating Systems</span>
+      <span class="tag">Computer Networks</span>
+
+      <p><strong>Machine Learning &amp; Tools</strong></p>
+      <span class="tag">Neural Networks</span>
+      <span class="tag">Feature Engineering</span>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="entry">
+        <h3>BioQuery – Full-Stack Bioinformatics Platform</h3>
+        <p class="subtitle">TypeScript, Next.js, SQL, Vercel</p>
+        <p class="project-links">
+          <a href="https://github.com/Chiragraikar08" target="_blank">
+            GitHub
+          </a>
+          | <a href="#" target="_blank">Live Demo</a>
+        </p>
+        <ul>
+          <li>
+            Designed a modular backend architecture and normalized SQL
+            schema for efficient querying and analysis of biological data.
+          </li>
+          <li>
+            Built a REST API layer connecting the SQL data layer to a
+            Next.js frontend using maintainable API-based architecture.
+          </li>
+          <li>
+            Deployed and maintained the full-stack application on Vercel.
+          </li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>PayMaster – Payroll Management Web App</h3>
+        <p class="subtitle">Node.js, Express, SQLite/MySQL, Vercel</p>
+        <ul>
+          <li>
+            Developed a full-stack payroll application with a Node.js/Express
+            REST API and relational database for employee and payroll records.
+          </li>
+          <li>
+            Implemented cookie-session authentication to secure payroll
+            routes and data, and deployed the application on Vercel.
+          </li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>EaseBook – Appointment Booking App</h3>
+        <p class="subtitle">
+          React, Node.js, Express, PostgreSQL, Firebase, Capacitor
+        </p>
+        <ul>
+          <li>
+            Built a location-based booking platform for salons, clinics
+            and similar businesses using React/Vite and a Node.js/Express
+            REST API backed by PostgreSQL.
+          </li>
+          <li>
+            Integrated Google Maps API for business discovery and Firebase
+            into the application.
+          </li>
+          <li>
+            Packaged the web application as an Android app using Capacitor.
+          </li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Virtual Jewellery AI Try-On</h3>
+        <p class="subtitle">
+          Python, JavaScript, Three.js, HTML, CSS, Vercel
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/Chiragraikar08" target="_blank">
+            GitHub
+          </a>
+          | <a href="#" target="_blank">Live Demo</a>
+        </p>
+        <ul>
+          <li>
+            Built a Python backend service for a dynamic product catalog
+            with real-time gold pricing, automated billing and invoice
+            generation.
+          </li>
+          <li>
+            Connected pricing and catalog services to a browser-based
+            try-on frontend using a live camera feed and Three.js models.
+          </li>
+          <li>
+            Optimized backend response time and mobile performance and
+            deployed the application on Vercel.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <strong>Nutanix Certified Associate 6</strong>
+          – Nutanix, April 2026
+        </li>
+        <li>
+          <strong>Google Cloud Career Launchpad – Cloud Engineer Track</strong>
+          – Google Cloud, April 2026
+        </li>
+        <li>
+          <strong>The Complete Full-Stack Web Development Bootcamp</strong>
+          – Udemy, March 2026
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements &amp; Activities</h2>
+      <ul>
+        <li>
+          Participated in Amazon ML Challenge; team ranked in the top 100.
+        </li>
+        <li>Participated in CodeSphere Hackathon (IEEE).</li>
+        <li>
+          Volunteered at Phaseshift 2024, UTSAV 2025 and Phaseshift 2025.
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2026 Chirag C Raykar
+    </footer>
+
+  </main>
+</body>
+</html>
